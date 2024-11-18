@@ -24,6 +24,27 @@ async function getData(){
     });
 }
 
+async function getData2(){
+    const result = await fetch('https://randomuser.me/api?results=1');
+    const character = await result.json();
+    console.log(character)
+    character.results.forEach(element => {
+                const img = document.createRange().createContextualFragment(`
+                    
+            <div class="showcase-content main-width">
+                <img src="${element.picture.large}" alt="">
+                <h1>Hi, I'm a Creative Designer!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quo suscipit, ratione saepe, accusantium fugit labore reiciendis ullam quas atque eum nesciunt omnis voluptas sunt. Voluptatibus necessitatibus explicabo quae cum ullam sapiente vitae. Ipsum, necessitatibus?</p>
+                <a href="" class="btn button-1">about me</a>
+            </div>
+                    
+                    `)
+                    const portafolio = document.getElementById('showcase');
+                    portafolio.append(img)
+    });
+}
+
+
 const btn_validar = document.getElementById('btn-validar').onclick = (e) => {
     e.preventDefault();
     const nombre = document.getElementById('nombre');
@@ -66,3 +87,4 @@ const emailValido = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)
 }
 getData()
+getData2()
