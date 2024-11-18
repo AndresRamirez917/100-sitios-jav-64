@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(400px, auto);
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 30px;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.main-width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+::-moz-placeholder {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f007";
+  text-align: right;
+}
+
+::placeholder {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f007";
+  text-align: right;
+}
+
+#mainheader {
+  background: rgb(0, 0, 57);
+}
+#mainheader .navbar .logo {
+  width: 50px;
+  margin: 1rem 0;
+}
+#mainheader .navbar ul {
+  margin-top: 0.5rem;
+  display: flex;
+}
+#mainheader .navbar ul li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+#mainheader .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#showcase {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+#showcase .showcase-content {
+  text-align: center;
+}
+#showcase .showcase-content h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+#showcase .showcase-content img {
+  width: 30%;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+#showcase .showcase-content p {
+  margin: 1rem 0;
+}
+#showcase .showcase-content .button-1 {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 0, 57);
+  color: rgb(0, 0, 57);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#about h2 {
+  margin-bottom: 2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#about p {
+  text-align: justify;
+}
+#about img {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+#disclaimer {
+  text-align: center;
+}
+#disclaimer .disclaimer-content h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+#disclaimer .disclaimer-content img {
+  margin: 2rem 0;
+}
+#disclaimer .disclaimer-content a {
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+#portfolio {
+  margin-top: 3rem;
+}
+#portfolio .portfolio-1 {
+  background: url("/images/portfolio-1.jpg");
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+#portfolio .portfolio-2 {
+  background: url("/images/portfolio-2.jpg");
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+#portfolio .portfolio-3 {
+  background: url("/images/portfolio-3.jpg");
+  grid-column: 4/5;
+  grid-row: 1;
+}
+#portfolio .portfolio-4 {
+  background: url("/images/portfolio-4.jpg");
+  grid-column: 4;
+  grid-row: 2/3;
+}
+#portfolio .portfolio-5 {
+  background: url("/images/portfolio-5.jpg");
+  grid-column: 1/4;
+  grid-row: 3;
+}
+#portfolio .portfolio-6 {
+  background: url("/images/portfolio-6.jpg");
+  grid-column: 4;
+  grid-row: 3;
+}
+#portfolio .portfolio-1,
+#portfolio .portfolio-2,
+#portfolio .portfolio-3,
+#portfolio .portfolio-4,
+#portfolio .portfolio-5,
+#portfolio .portfolio-6 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#social .container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+#social .container .social-row {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin: 1rem 0;
+}
+#social .container .social-row h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+#social .container .social-row img {
+  margin-left: 10px;
+  margin-bottom: 3rem;
+}
+
+#contact {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+#contact h2 {
+  text-align: center;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+#contact form .flex {
+  display: flex;
+  gap: 20px;
+}
+#contact form .flex-box-1 {
+  flex: 1;
+}
+
+form .form-group {
+  margin-bottom: 1rem;
+}
+form .form-control {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+}
+form .button-2 {
+  width: 100%;
+  color: #fff;
+  background: #000;
+}
+
+#footer {
+  padding: 3rem 0;
+  text-align: center;
+  background: rgb(0, 0, 57);
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,72 @@
+//mainheader
+#mainheader {
+        .navbar {
+            .container {
+                display: block;
+            }
+            .logo {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                padding: 1rem 0;
+            }
+            ul {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                li {
+                    display: inline-block;
+                    
+                }
+            }
+        }
+}
+
+//about
+#about {
+    .about-row {
+        display: block;
+        img {
+            display: block;
+            margin: 0 auto;
+            padding: 1rem 0;
+            width: 100%;
+        }
+    }
+}
+
+.grid {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+//portfolio
+#portfolio {
+    .portfolio-1,
+    .portfolio-2,
+    .portfolio-3,
+    .portfolio-4,
+    .portfolio-5,
+    .portfolio-6 {
+       grid-column: 1;
+    }
+
+    .portfolio-1 {
+        grid-row: 1;
+    }
+    .portfolio-2 {
+        grid-row: 2;
+    }
+    .portfolio-3 {
+        grid-row: 3;
+    }
+    .portfolio-4 {
+        grid-row: 4;
+    }
+    .portfolio-5 {
+        grid-row: 5;
+    }
+    .portfolio-6 {
+        grid-row: 6;
+    }
+}
